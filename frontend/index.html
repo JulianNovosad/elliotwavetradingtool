@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliott Wave Predictor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Elliott Wave Predictor</h1>
+            <div class="controls">
+                <label for="symbol-input">Symbol:</label>
+                <input type="text" id="symbol-input" placeholder="e.g., BTCUSDT">
+                
+                <label for="interval-select">Interval:</label>
+                <select id="interval-select">
+                    <option value="1m">1m</option>
+                    <option value="5m">5m</option>
+                    <option value="15m">15m</option>
+                    <option value="30m">30m</option>
+                    <option value="1h">1h</option>
+                    <option value="1d">1d</option>
+                </select>
+
+                <label for="source-select">Source:</label>
+                <select id="source-select">
+                    <option value="">Auto</option>
+                    <option value="binance">Binance</option>
+                    <option value="yahoo">Yahoo Finance</option>
+                    <option value="csv">Sample CSV</option>
+                </select>
+                
+                <button id="set-symbol-btn">Set Symbol</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="chart-panel">
+                <canvas id="price-chart"></canvas>
+                <div class="time-price-display">
+                    <span id="current-time"></span> | <span id="current-price"></span>
+                </div>
+            </div>
+
+            <div class="panels">
+                <div class="panel confidence-breakdown">
+                    <h3>Confidence Breakdown</h3>
+                    <div id="confidence-scores">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+                
+                <div class="panel candidates-panel">
+                    <h3>Top Wave Counts</h3>
+                    <div id="wave-candidates">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+                
+                <div class="panel technical-indicators-panel">
+                    <h3>Technical Indicators</h3>
+                    <div id="technical-indicators">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+                
+                <div class="panel predictions-panel">
+                    <h3>ML Predictions</h3>
+                    <div id="ml-predictions">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

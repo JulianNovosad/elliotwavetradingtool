@@ -1,0 +1,30 @@
+# Elliott Wave Predictor Configuration
+
+# Database settings
+db_path: ./data/prices.db
+db_ttl_hours: 8 # Data is automatically wiped after this many hours. Quote: "wipe it after, I don't know, 8 hours"
+
+# Data fetching settings
+default_resolution: 1m
+max_historical: 6 months # Maximum historical data to download when a symbol is selected.
+# Data adapter configuration can be added here if needed, e.g., API keys for Binance/AlphaVantage.
+# api_keys:
+#   binance: YOUR_BINANCE_API_KEY
+#   yahoo: YOUR_YAHOO_API_KEY # Note: yfinance often works without keys for public data.
+
+# Rate limiting settings
+symbol_rate_limit_seconds: 1 # Maximum requests to /symbol endpoint per IP per second. Quote: "one change per second"
+
+# Wave analysis settings
+max_candidate_counts: 3 # Number of top Elliott Wave count candidates to expose.
+
+# Wave timing enforcement
+min_wave_duration: 1 minute # Quote: "one wave per minute" (lower bound)
+max_wave_duration: 7 days # Quote: "one wave per week" (upper bound)
+
+# Confidence scoring weights (example values, adjust as needed)
+confidence_weights:
+  rule_compliance: 0.6 # Major weight. Quote: "major weight"
+  amplitude_duration_norm: 0.2
+  volatility_penalty: 0.1
+  chaos_metric: 0.1 # Optional chaos metrics, configurable weight. Quote: "optional chaos metrics (configurable weight)"

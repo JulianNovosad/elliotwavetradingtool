@@ -1,0 +1,20 @@
+2025-12-14 20:12:56,085 - __main__ - INFO - Starting FastAPI server...
+INFO:     Started server process [7765]
+INFO:     Waiting for application startup.
+2025-12-14 20:12:56,093 - __main__ - INFO - Starting application...
+2025-12-14 20:12:56,098 - __main__ - INFO - Database initialized at ./data/prices.db
+2025-12-14 20:12:56,098 - __main__ - INFO - Database cleanup worker started.
+2025-12-14 20:12:56,098 - analysis.wave_detector - INFO - Initialized ElliottRuleEngine with min_wave_duration=0:01:00, max_wave_duration=7 days, 0:00:00, strictness=True
+2025-12-14 20:12:56,098 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-14 20:12:56,098 - analysis.confidence - INFO - Initialized ConfidenceScorer with weights: {'rule_compliance': 0.6, 'amplitude_duration_norm': 0.2, 'volatility_penalty': 0.1, 'chaos_metric': 0.1}
+2025-12-14 20:12:56,098 - analysis.wave_detector - INFO - WaveDetector initialized with rule engine, NMS, confidence scorer, technical indicators, and ML predictor
+2025-12-14 20:12:56,098 - __main__ - INFO - Data polling and analysis loop started.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+2025-12-14 20:12:56,099 - __main__ - INFO - Database TTL cleanup: Deleted 0 rows older than 8 hours.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-12-14 20:39:30,416 - __main__ - INFO - Shutting down application...
+2025-12-14 20:39:30,416 - __main__ - INFO - Application shutdown complete.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7765]

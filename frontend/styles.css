@@ -1,0 +1,204 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background for the overall page */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1600px; /* Max width for large screens */
+    background-color: white; /* White background for the main application area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff; /* White header background */
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+header h1 {
+    margin: 0;
+    color: #000000; /* Black title text */
+    font-size: 24px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.controls label {
+    font-weight: bold;
+    color: #000000; /* Black label text */
+}
+
+.controls input[type="text"],
+.controls select,
+.controls button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.controls input[type="text"] {
+    width: 150px;
+}
+
+.controls select {
+    background-color: white;
+    cursor: pointer;
+}
+
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+}
+
+/* Chart panel styles */
+.chart-panel {
+    flex: 3; /* Takes up 3 parts of the available space */
+    min-width: 400px; /* Minimum width for the chart */
+    background-color: #ffffff; /* White background for chart area */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: relative; /* For positioning time/price display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#price-chart {
+    width: 100%;
+    height: 400px; /* Fixed height for the canvas */
+    background-color: #ffffff; /* White canvas background */
+    border: 1px solid #eee; /* Subtle border for canvas */
+    border-radius: 4px;
+    display: block; /* Remove extra space below canvas */
+}
+
+.time-price-display {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: monospace; /* Monospaced font for time/price */
+}
+
+/* Sidebar panels styles */
+.panels {
+    flex: 1; /* Takes up 1 part of the available space */
+    min-width: 250px; /* Minimum width for panels */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.panel h3 {
+    margin-top: 0;
+    color: #000000; /* Black panel heading text */
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#confidence-scores,
+#wave-candidates,
+#technical-indicators,
+#ml-predictions {
+    max-height: 200px; /* Limit height for scrollable content */
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#confidence-scores p,
+#wave-candidates p,
+#technical-indicators p,
+#ml-predictions p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Specific color requirements */
+/* Candles, price lines, generic chart elements are black */
+/* Elliott waves colored: red when price goes down, green when price goes up */
+
+/* Additional styles for technical indicators and ML predictions */
+#technical-indicators p,
+#ml-predictions p {
+    font-family: 'Courier New', monospace;
+    margin: 8px 0;
+}
+
+#ml-predictions p {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .controls {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .chart-panel, .panels {
+        flex: none; /* Reset flex basis */
+        width: 100%;
+    }
+    #price-chart {
+        height: 300px; /* Slightly smaller chart on mobile */
+    }
+}
