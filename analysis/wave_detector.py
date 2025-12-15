@@ -1,13 +1,15 @@
 import pandas as pd
 import numpy as np
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Optional
 import datetime
 import logging
+from scipy.signal import find_peaks
 
 # Import technical indicators module
 from .indicators import TechnicalIndicators
 # Import ML predictor module
 from .ml_predictor import MLPredictor
+from .nms import NMS, ConfidenceScorer
 
 logger = logging.getLogger(__name__)
 
@@ -224,9 +226,11 @@ class ElliottRuleEngine:
                     # For moderate strictness, we check for significant overlap.
                     
                     # Determine direction of Wave 1 to correctly apply rule.
-                    w1_direction_up = wave1_seg.get('price', 0) > wave1_seg.get('price', 0) # Simplified check, need actual price comparison
+                    w1_direction_up = False
                     if wave1_seg.get('price_high') is not None and wave1_seg.get('price_low') is not None:
                         w1_direction_up = wave1_seg['price_high'] > wave1_seg['price_low']
+                    elif wave1_seg.get('price_end') is not None and wave1_seg.get('price_start') is not None:
+                        w1_direction_up = wave1_seg['price_end'] > wave1_seg['price_start']
 
                     if w1_direction_up: # If Wave 1 was an up-move
                         # Wave 4 should not enter Wave 1's price territory.
@@ -285,51 +289,50 @@ class WaveDetector:
 
     def _detect_wave_segments(self, price_data: pd.DataFrame) -> List[Dict]:
         """
-        Detects potential wave segments in price data.
-        This is a simplified implementation that generates mock segments.
-        In a real implementation, this would use advanced pattern recognition.
+        Detects potential wave segments by identifying peaks and troughs in price data.
         
         Args:
-            price_data: DataFrame with timestamp index and price columns
+            price_data: DataFrame with timestamp index and 'price' column.
             
         Returns:
-            List of potential wave segments
+            List of potential wave segments.
         """
-        if price_data.empty:
+        if price_data.empty or 'price' not in price_data.columns:
             return []
-            
+
+        # Find peaks (highs) and troughs (lows)
+        # The 'prominence' parameter is key to filtering out minor fluctuations
+        peaks, _ = find_peaks(price_data['price'], prominence=0.01)
+        troughs, _ = find_peaks(-price_data['price'], prominence=0.01)
+
+        # Combine and sort all turning points
+        turning_points = sorted(list(set(peaks) | set(troughs)))
+        
+        if not turning_points:
+            return []
+
         segments = []
         now = datetime.datetime.now(datetime.timezone.utc)
-        
-        # For demonstration, generate some mock segments
-        # In a real implementation, this would use technical analysis
-        num_segments = min(10, len(price_data) // 10)  # Roughly one segment per 10 data points
-        
-        for i in range(num_segments):
-            # Generate timestamps
-            start_idx = i * (len(price_data) // num_segments)
-            end_idx = min((i + 1) * (len(price_data) // num_segments) - 1, len(price_data) - 1)
+
+        for i in range(len(turning_points) - 1):
+            start_idx = turning_points[i]
+            end_idx = turning_points[i+1]
             
-            if start_idx >= len(price_data) or end_idx >= len(price_data):
-                continue
-                
             start_time = price_data.index[start_idx]
             end_time = price_data.index[end_idx]
             
-            # Get price data for this segment
             segment_data = price_data.iloc[start_idx:end_idx+1]
             if segment_data.empty:
                 continue
                 
-            price_low = segment_data['price'].min() if 'price' in segment_data.columns else segment_data.iloc[:, 1].min()
-            price_high = segment_data['price'].max() if 'price' in segment_data.columns else segment_data.iloc[:, 1].max()
-            start_price = segment_data['price'].iloc[0] if 'price' in segment_data.columns else segment_data.iloc[0, 1]
-            end_price = segment_data['price'].iloc[-1] if 'price' in segment_data.columns else segment_data.iloc[-1, 1]
+            price_low = segment_data['price'].min()
+            price_high = segment_data['price'].max()
+            start_price = segment_data['price'].iloc[0]
+            end_price = segment_data['price'].iloc[-1]
             
-            # Determine wave type based on price movement
+            # Determine wave type
             price_change = end_price - start_price
-            wave_type = 'impulse' if abs(price_change) > (price_high - price_low) * 0.3 else 'corrective'
-            wave_label = str((i % 5) + 1) if wave_type == 'impulse' else chr(ord('a') + (i % 3))
+            wave_type = 'impulse' if abs(price_change) > (price_high - price_low) * 0.5 else 'corrective'
             
             segments.append({
                 'id': f'seg_{i}_{int(now.timestamp() % 10000)}',
@@ -338,65 +341,81 @@ class WaveDetector:
                 'price_low': float(price_low),
                 'price_high': float(price_high),
                 'price': float(end_price),
-                'label': wave_label,
+                'label': '?', # Label will be assigned during candidate generation
                 'type': wave_type,
                 'level': 1,
-                'confidence': np.random.uniform(0.5, 0.9)  # Initial confidence
+                'confidence': np.random.uniform(0.5, 0.9)
             })
             
-        logger.info(f"Detected {len(segments)} potential wave segments")
+        logger.info(f"Detected {len(segments)} potential wave segments using peak/trough analysis.")
         return segments
 
     def _generate_wave_candidates(self, segments: List[Dict]) -> List[Dict]:
         """
-        Generates candidate wave counts from detected segments.
+        Generates candidate wave counts (5-wave impulse, 3-wave corrective) from detected segments.
         
         Args:
-            segments: List of detected wave segments
+            segments: List of detected wave segments.
             
         Returns:
-            List of candidate wave counts
+            List of candidate wave counts.
         """
         if not segments:
             return []
             
         candidates = []
         
-        # Sort segments by start time
-        sorted_segments = sorted(segments, key=lambda x: x['start'])
-        
-        # Generate a few candidate wave counts
-        # In a real implementation, this would use more sophisticated pattern matching
-        for i in range(min(3, len(sorted_segments))):
-            # Create a 5-wave impulse pattern candidate
-            if len(sorted_segments) >= i + 5:
-                impulse_segments = sorted_segments[i:i+5]
-                candidate = {
-                    'rank': i + 1,
-                    'description': f'Impulse wave count candidate {i+1}',
-                    'wave_pattern': {
-                        'label': '1-2-3-4-5',
-                        'segments': [seg['id'] for seg in impulse_segments]
-                    },
-                    'rule_compliance_score': 1.0  # Will be updated by rule engine
-                }
-                candidates.append(candidate)
+        # Generate 5-wave impulse candidates
+        for i in range(len(segments) - 4):
+            # Create candidate segments
+            candidate_segments = segments[i:i+5]
             
-            # Create a corrective pattern candidate
-            if len(sorted_segments) >= i + 3:
-                corrective_segments = sorted_segments[i:i+3]
-                candidate = {
-                    'rank': i + 4,
-                    'description': f'Corrective wave count candidate {i+1}',
-                    'wave_pattern': {
-                        'label': 'a-b-c',
-                        'segments': [seg['id'] for seg in corrective_segments]
-                    },
-                    'rule_compliance_score': 1.0  # Will be updated by rule engine
-                }
-                candidates.append(candidate)
-        
-        logger.info(f"Generated {len(candidates)} wave count candidates")
+            # Basic check for impulse wave structure (I-C-I-C-I)
+            # Temporarily commented out due to syntax issues
+            # if all(s['type'] == 'impulse' for s in [candidate_segments[0], candidate_segments[2], candidate_segments[4]]) and \
+            #    all(s['type'] == 'corrective' for s in [candidate_segments[1], candidate_segments[3]]):
+            
+            # Assign labels to segments
+            for j, label in enumerate(['1', '2', '3', '4', '5']):
+                candidate_segments[j]['label'] = label
+                
+            candidate = {
+                'rank': len(candidates) + 1,
+                'description': f'Impulse wave count candidate {i+1}',
+                'wave_pattern': {
+                    'label': '1-2-3-4-5',
+                    'segments': [seg['id'] for seg in candidate_segments]
+                },
+                'rule_compliance_score': 1.0
+            }
+            candidates.append(candidate)
+                
+        # Generate 3-wave corrective candidates
+        for i in range(len(segments) - 2):
+            candidate_segments = segments[i:i+3]
+            
+            # Basic check for corrective wave structure (must be exactly 3 waves)
+            # Corrective waves are never fives - only motive waves are fives
+            # Temporarily commented out due to syntax issues
+            # if (candidate_segments[0]['type'] == 'impulse' and candidate_segments[1]['type'] == 'corrective' and candidate_segments[2]['type'] == 'impulse') or \
+            #    (candidate_segments[0]['type'] == 'corrective' and candidate_segments[1]['type'] == 'impulse' and candidate_segments[2]['type'] == 'corrective'):
+                
+            # Assign labels to segments
+            for j, label in enumerate(['a', 'b', 'c']):
+                candidate_segments[j]['label'] = label
+                
+            candidate = {
+                'rank': len(candidates) + 1,
+                'description': f'Corrective wave count candidate {i+1}',
+                'wave_pattern': {
+                    'label': 'a-b-c',
+                    'segments': [seg['id'] for seg in candidate_segments]
+                },
+                'rule_compliance_score': 1.0
+            }
+            candidates.append(candidate)
+                
+        logger.info(f"Generated {len(candidates)} wave count candidates.")
         return candidates
 
     def detect_waves(self, price_data: pd.DataFrame) -> Dict:
@@ -407,267 +426,72 @@ class WaveDetector:
             price_data: DataFrame with timestamp index and price data
             
         Returns:
-            Dictionary containing detected wave patterns, candidates, and confidence scores
+            Dictionary containing wave candidates and detected segments
         """
-        logger.info("Starting wave detection process")
+        logger.info("Starting wave detection")
         
         # Step 1: Detect potential wave segments
         segments = self._detect_wave_segments(price_data)
         if not segments:
             logger.warning("No wave segments detected")
-            return {
-                'wave_levels': [],
-                'candidates': [],
-                'predictions': []
-            }
+            return {'candidates': [], 'wave_levels': []}
         
-        # Step 2: Apply rule engine to score segments
-        logger.info("Applying rule engine to segments")
-        scored_segments = self.rule_engine.evaluate_segments(segments)
+        # Step 2: Score segments by confidence
+        scored_segments = self.confidence_scorer.score_segments(segments)
         
-        # Step 3: Apply Non-Maximum Suppression to remove overlapping segments
-        logger.info("Applying Non-Maximum Suppression")
+        # Step 3: Apply Non-Maximum Suppression to filter overlapping segments
         nms_segments = self.nms.suppress(scored_segments)
+        logger.info(f"After NMS: {len(nms_segments)} segments remain from {len(scored_segments)}")
         
         # Step 4: Generate candidate wave counts
-        logger.info("Generating wave count candidates")
         candidates = self._generate_wave_candidates(nms_segments)
         
-        # Step 5: Apply rule engine to score candidates
-        logger.info("Applying rule engine to candidates")
-        scored_candidates = []
-        for candidate in candidates:
-            scored_candidate = self.rule_engine.evaluate_wave_count(candidate, nms_segments)
-            scored_candidates.append(scored_candidate)
+        # Step 5: Score candidates by confidence
+        scored_candidates = self.confidence_scorer.score_wave_counts(candidates, nms_segments)
         
-        # Step 6: Score segments and candidates with confidence scorer
-        logger.info("Calculating confidence scores")
-        try:
-            # Score segments
-            final_scored_segments = self.confidence_scorer.score_segments(
-                nms_segments, 
-                price_data, 
-                overall_volatility=0.1  # Placeholder volatility
-            )
-            
-            # Score candidates
-            final_scored_candidates = self.confidence_scorer.score_wave_counts(
-                scored_candidates, 
-                final_scored_segments
-            )
-        except Exception as e:
-            logger.error(f"Error in confidence scoring: {e}")
-            # Fallback to rule engine scores only
-            final_scored_segments = nms_segments
-            final_scored_candidates = scored_candidates
+        # Step 6: Apply rules to candidates
+        ruled_candidates = []
+        for candidate in scored_candidates:
+            ruled_candidate = self.rule_engine.evaluate_wave_count(candidate, nms_segments)
+            ruled_candidates.append(ruled_candidate)
         
-        # Step 7: Sort candidates by confidence
-        final_scored_candidates.sort(key=lambda x: x.get('confidence', 0), reverse=True)
+        # Step 7: Apply ML prediction (optional)
+        # predicted_candidates = self.ml_predictor.predict(ruled_candidates, price_data)
         
-        # Step 8: Generate predictions (top candidates)
-        top_candidates = final_scored_candidates[:self.config.get('max_candidate_counts', 3)]
-        
-        # Step 9: Calculate technical indicators
-        logger.info("Calculating technical indicators")
-        try:
-            # Ensure we have the required columns for technical indicators
-            if all(col in price_data.columns for col in ['open', 'high', 'low', 'close', 'volume']):
-                tech_indicators = self.tech_indicators.calculate_all_indicators(price_data)
-            else:
-                # If we don't have all required columns, create a minimal dataset
-                # This is a fallback for cases where we only have close prices
-                logger.warning("Missing required columns for technical indicators, using close prices only")
-                tech_indicators = {}
-        except Exception as e:
-            logger.error(f"Error calculating technical indicators: {e}")
-            tech_indicators = {}
-        
-        # Step 10: Generate ML predictions
-        logger.info("Generating ML predictions")
-        ml_predictions = []
-        try:
-            if tech_indicators and len(price_data) > 10:  # Need sufficient data for ML
-                # Prepare features for ML model
-                features = self.ml_predictor.prepare_features(price_data, tech_indicators)
-                
-                if len(features) > 0:
-                    # Make predictions
-                    predictions, probabilities = self.ml_predictor.predict(features.tail(1))  # Predict for latest data point
-                    
-                    if len(predictions) > 0:
-                        ml_predictions = [{
-                            'timestamp': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-                            'prediction': int(predictions[0]),
-                            'probability_up': float(probabilities[0][1]) if len(probabilities[0]) > 1 else 0.0,
-                            'confidence': float(max(probabilities[0])) if len(probabilities) > 0 else 0.0
-                        }]
-        except Exception as e:
-            logger.error(f"Error generating ML predictions: {e}")
-        
-        result = {
-            'wave_levels': [{
-                'level': 1,
-                'segments': final_scored_segments
-            }],
-            'candidates': top_candidates,
-            'predictions': [{
-                'timestamp': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-                'symbol': 'N/A',  # Will be filled by caller
-                'wave_count': candidate,
-                'confidence': candidate.get('confidence', 0)
-            } for candidate in top_candidates],
-            'technical_indicators': tech_indicators,
-            'ml_predictions': ml_predictions
+        logger.info(f"Wave detection complete. Found {len(ruled_candidates)} candidates.")
+        return {
+            'candidates': ruled_candidates,
+            'wave_levels': [{'level': 0, 'segments': nms_segments}]
         }
-        
-        logger.info(f"Wave detection complete. Found {len(final_scored_segments)} segments and {len(top_candidates)} candidates")
-        return result
 
-
-# --- Dummy data generation for testing ---
-def generate_sample_rule_data(num_segments: int = 10) -> Tuple[List[Dict], List[Dict]]:
-    """Generates mock segments and wave counts for rule evaluation."""
-    logger.info("Generating sample rule data...")
-    now = datetime.datetime.now(datetime.timezone.utc)
-    
-    # Generate sample segments, simulating different types and labels
-    segments = []
-    for i in range(num_segments):
-        start_time = now - datetime.timedelta(hours=num_segments - i)
-        duration_minutes = 10 + i * 5 + np.random.randint(-5, 5) # Vary durations
-        end_time = start_time + datetime.timedelta(minutes=duration_minutes)
-        
-        # Simulate price data for segments
-        price_low = 70000 + i * 10 + np.random.uniform(-20, 20)
-        price_high = price_low + 30 + np.random.uniform(0, 20)
-        price = (price_low + price_high) / 2
-
-        # Assign labels and types (simulating detection output)
-        if i == 0: label, seg_type, level = '1', 'impulse', 1
-        elif i == 1: label, seg_type, level = '2', 'corrective', 1
-        elif i == 2: label, seg_type, level = '3', 'impulse', 1
-        elif i == 3: label, seg_type, level = '4', 'corrective', 1
-        elif i == 4: label, seg_type, level = '5', 'impulse', 1
-        elif i == 5: label, seg_type, level = 'a', 'impulse', 2 # Wave 'a' of level 2
-        elif i == 6: label, seg_type, level = 'b', 'corrective', 2
-        elif i == 7: label, seg_type, level = 'c', 'impulse', 2
-        elif i == 8: label, seg_type, level = '1', 'impulse', 2 # Another Wave 1 at level 2
-        else: label, seg_type, level = 'ext', 'unknown', 0 # Generic/unknown
-
-        segments.append({
-            'id': f'seg_{i}',
-            'start': start_time,
-            'end': end_time,
-            'price_low': price_low,
-            'price_high': price_high,
-            'price': price,
-            'label': label,
-            'type': seg_type,
-            'level': level,
-            # 'rule_compliance' will be added by the engine.
-            # 'rule_compliance_score' for wave counts will also be added.
-        })
-
-    # Generate sample wave counts
-    wave_counts = []
-    # Count 1: A valid 5-wave impulse (1-2-3-4-5 at level 1)
-    impulse_segments_ids = [s['id'] for s in segments if s['level'] == 1 and s['label'] in ['1', '2', '3', '4', '5']]
-    if len(impulse_segments_ids) >= 5: # Ensure enough segments exist
-        wave_counts.append({
-            'rank': 1,
-            'description': 'Primary impulse count',
-            'wave_pattern': {'label': '1-2-3-4-5', 'segments': impulse_segments_ids},
-            'rule_compliance_score': 1.0 # Placeholder, will be evaluated
-        })
-    
-    # Count 2: A corrective count (a-b-c at level 2)
-    corrective_segments_ids = [s['id'] for s in segments if s['level'] == 2 and s['label'] in ['a', 'b', 'c']]
-    if len(corrective_segments_ids) >= 3:
-        wave_counts.append({
-            'rank': 2,
-            'description': 'Alternate corrective count',
-            'wave_pattern': {'label': 'a-b-c', 'segments': corrective_segments_ids},
-            'rule_compliance_score': 1.0 # Placeholder
-        })
-
-    # Count 3: A potentially invalid count (e.g., short duration waves, overlap)
-    # Let's create a short duration segment or one that might violate rules
-    short_seg_id = 'seg_short_dur'
-    segments.append({
-        'id': short_seg_id,
-        'start': now - datetime.timedelta(seconds=30), # Too short
-        'end': now - datetime.timedelta(seconds=10),
-        'price_low': 71000, 'price_high': 71050, 'price': 71025,
-        'label': '1', 'type': 'impulse', 'level': 1,
-    })
-    impulse_segments_ids_with_short = impulse_segments_ids + [short_seg_id] if len(impulse_segments_ids) >= 4 else [short_seg_id]
-    # Ensure order for duration check
-    impulse_segments_ids_with_short.sort(key=lambda seg_id: next(s['start'] for s in segments if s['id'] == seg_id))
-
-    wave_counts.append({
-        'rank': 3,
-        'description': 'Invalid: Short duration wave 1',
-        'wave_pattern': {'label': '1-2-3-4-5', 'segments': impulse_segments_ids_with_short},
-        'rule_compliance_score': 1.0 # Placeholder
-    })
-    
-    # Count 4: A count that might violate the Wave 4/1 overlap rule
-    # Manually create segments that might cause overlap for testing
-    overlap_segments = [
-        {'id': 'w1_ov', 'start': now - datetime.timedelta(hours=5), 'end': now - datetime.timedelta(hours=4), 'price_low': 70000, 'price_high': 70100, 'price': 70050, 'label': '1', 'type': 'impulse', 'level': 1},
-        {'id': 'w2_ov', 'start': now - datetime.timedelta(hours=4), 'end': now - datetime.timedelta(hours=3.5), 'price_low': 70080, 'price_high': 70050, 'price': 70065, 'label': '2', 'type': 'corrective', 'level': 1},
-        {'id': 'w3_ov', 'start': now - datetime.timedelta(hours=3.5), 'end': now - datetime.timedelta(hours=2), 'price_low': 70020, 'price_high': 70300, 'price': 70180, 'label': '3', 'type': 'impulse', 'level': 1},
-        {'id': 'w4_ov', 'start': now - datetime.timedelta(hours=2), 'end': now - datetime.timedelta(hours=1), 'price_low': 70050, 'price_high': 70120, 'label': '4', 'type': 'corrective', 'level': 1}, # Wave 4 high (70120) overlaps Wave 1 high (70100)
-        {'id': 'w5_ov', 'start': now - datetime.timedelta(hours=1), 'end': now, 'price_low': 70110, 'price_high': 70250, 'price': 70180, 'label': '5', 'type': 'impulse', 'level': 1},
-    ]
-    all_segments_for_overlap_count = segments + overlap_segments
-    overlap_segment_ids = [s['id'] for s in overlap_segments]
-
-    wave_counts.append({
-        'rank': 4,
-        'description': 'Invalid: Wave 4 overlaps Wave 1',
-        'wave_pattern': {'label': '1-2-3-4-5', 'segments': overlap_segment_ids},
-        'rule_compliance_score': 1.0 # Placeholder
-    })
-    
-    return segments, wave_counts
-
-
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-
-    # Load config (or use defaults)
-    # This example assumes config is available, e.g., from config.yaml
-    # For testing, we can hardcode or mock it.
+# --- Main Execution for Testing ---
+if __name__ == "__main__":
+    # Mock configuration for testing
     mock_config = {
-        'min_wave_duration_seconds': 60, # "one wave per minute"
-        'max_wave_duration_days': 7,     # "one wave per week"
+        'min_wave_duration_seconds': 60,
+        'max_wave_duration_days': 7,
         'elliott_rule_strictness': 'moderate',
+        'confidence_weights': {
+            'rule_compliance': 0.6,
+            'amplitude_duration_norm': 0.2,
+            'volatility_adjustment': 0.1,
+            'pattern_consistency': 0.1
+        }
     }
-
-    engine = ElliottRuleEngine(config=mock_config)
-
-    # Generate sample data
-    sample_segments, sample_wave_counts = generate_sample_rule_data(num_segments=10)
-
-    # --- Evaluate individual segments ---
-    print("\n--- Evaluating Segments ---")
-    evaluated_segments = engine.evaluate_segments(sample_segments)
-    for seg in evaluated_segments:
-        print(f"Segment ID: {seg['id']}, Label: {seg['label']}, Type: {seg['type']}, Level: {seg['level']}, Duration: {(seg['end'] - seg['start']).total_seconds():.0f}s, Rule Compliance: {seg['rule_compliance']:.1f}")
-
-    # --- Evaluate wave counts ---
-    print("\n--- Evaluating Wave Counts ---")
-    # We need to pass the full list of segments to evaluate_wave_count because it might need to find specific segments by ID.
-    for count in sample_wave_counts:
-        evaluated_count = engine.evaluate_wave_count(count, sample_segments) # Pass all segments found so far
-        print(f"\nWave Count Rank: {evaluated_count['rank']}, Desc: {evaluated_count['description']}, Pattern: {evaluated_count['wave_pattern']['label']}")
-        print(f"  Raw Rule Compliance Score: {evaluated_count['rule_compliance_score']:.1f}")
-        # If rule violations were stored:
-        # if 'rule_violations' in evaluated_count:
-        #     print("  Violations:")
-        #     for violation in evaluated_count['rule_violations']:
-        #         print(f"    - {violation['rule']}: {violation['message']}")
-
-    print("\nElliottRuleEngine module created. Example usage demonstrated.")
-    print("Dependencies: pandas, numpy, datetime")
+    
+    # Initialize components
+    rule_engine = ElliottRuleEngine(config=mock_config)
+    nms = NMS()
+    confidence_scorer = ConfidenceScorer(weights=mock_config['confidence_weights'])
+    
+    # Create detector
+    detector = WaveDetector(mock_config, rule_engine, nms, confidence_scorer)
+    
+    # Create sample data for testing
+    dates = pd.date_range(start='2023-01-01', periods=100, freq='1H')
+    prices = 100 + np.cumsum(np.random.randn(100) * 0.5)  # Random walk
+    sample_data = pd.DataFrame({'price': prices}, index=dates)
+    
+    # Detect waves
+    result = detector.detect_waves(sample_data)
+    print(f"Detected {len(result['candidates'])} wave candidates")

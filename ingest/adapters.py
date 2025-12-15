@@ -174,14 +174,17 @@ class BinanceAdapter(DataAdapter):
 
                     async with session.get(klines_url, params=params) as response:
                         response.raise_for_status() # Raise HTTPError for bad responses (4xx or 5xx)
-                all_klines.extend(klines)
+                        klines = await response.json()
+                        all_klines.extend(klines)
 
-                # Set next startTime to the close time of the last kline in the current batch
-                last_kline_close_time = klines[-1][0]
-                current_start_ts = last_kline_close_time + 1 # Start from the next millisecond after the last close
+                        # Set next startTime to the close time of the last kline in the current batch
+                        if klines:
+                            last_kline_close_time = klines[-1][0]
+                            current_start_ts = last_kline_close_time + 1 # Start from the next millisecond after the last close
 
-                if len(klines) < params.get('limit', 500): # If fewer than limit, assume end of data for this range
-                    break
+                        if len(klines) < params.get('limit', 500): # If fewer than limit, assume end of data for this range
+                            break
+                    await asyncio.sleep(0.1)
 
             if not all_klines:
                 logger.warning(f"No klines found for {self.binance_symbol} in range {start_date} to {end_date}")
@@ -190,8 +193,8 @@ class BinanceAdapter(DataAdapter):
             # Parse klines into DataFrame
             # Each kline is: [open_time, open, high, low, close, volume, close_time, quote_asset_volume, number_of_trades, taker_buy_base_asset_volume, taker_buy_quote_asset_volume, ignore]
             df = pd.DataFrame(all_klines, columns=[
-                'open_time', 'open', 'high', 'low', 'close', 'volume', 'close_time', 
-                'quote_asset_volume', 'number_of_trades', 'taker_buy_base_asset_volume', 
+                'open_time', 'open', 'high', 'low', 'close', 'volume', 'close_time',
+                'quote_asset_volume', 'number_of_trades', 'taker_buy_base_asset_volume',
                 'taker_buy_quote_asset_volume', 'ignore'
             ])
             # Convert timestamps to datetime objects (milliseconds)
@@ -210,7 +213,7 @@ class BinanceAdapter(DataAdapter):
             logger.info(f"Fetched {len(df)} klines for {self.binance_symbol} from Binance.")
             return df.reset_index() # Return with timestamp as a column
 
-        except requests.exceptions.RequestException as e:
+        except aiohttp.ClientError as e:
             logger.error(f"Binance API request failed for {self.binance_symbol}: {e}")
             return pd.DataFrame(columns=['timestamp', 'price', 'volume'])
         except Exception as e:
@@ -292,7 +295,6 @@ class MEXCAdapter(DataAdapter):
                         break
                 else:
                     break
-
                 # Respect API rate limits
                 await asyncio.sleep(0.1)
 
@@ -323,7 +325,6 @@ class MEXCAdapter(DataAdapter):
         except Exception as e:
             logger.error(f"Error processing MEXC data for {self.mexc_symbol}: {e}")
             return pd.DataFrame(columns=['timestamp', 'price', 'volume'])
-
     def map_interval_to_mexc(self, interval: str) -> typing.Optional[str]:
         """Maps internal interval string to MEXC API interval string."""
         interval_map = {

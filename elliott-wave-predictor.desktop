@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Elliott Wave Predictor
+Comment=Launch the Elliott Wave Predictor system
+Exec=/home/pc/ElliotWavePredictor/start.sh
+Icon=applications-science
+Terminal=true
+Categories=Science;Education;

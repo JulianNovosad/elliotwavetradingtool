@@ -1,0 +1,1508 @@
+2025-12-15 15:12:41,245 - __main__ - INFO - Starting autonomous Elliott Wave trading system testing and improvement
+2025-12-15 15:12:41,245 - __main__ - INFO - Phase 1: Running backtesting
+2025-12-15 15:12:41,260 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:12:41,260 - analysis.autonomous_backtester - INFO - AutonomousBacktester initialized
+2025-12-15 15:12:41,269 - analysis.autonomous_backtester - INFO - Loaded 24 records for timeframe 1h
+2025-12-15 15:12:41,272 - analysis.autonomous_backtester - INFO - Loaded 30 records for timeframe 1d
+2025-12-15 15:12:41,273 - analysis.autonomous_backtester - INFO - Loaded 200 records for timeframe 5m
+2025-12-15 15:12:41,275 - analysis.autonomous_backtester - INFO - Loaded 50 records for timeframe 30m
+2025-12-15 15:12:41,277 - analysis.autonomous_backtester - INFO - Loaded 1000 records for timeframe 1m
+2025-12-15 15:12:41,278 - analysis.autonomous_backtester - INFO - Loaded 100 records for timeframe 15m
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - INFO - Starting backtest
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - INFO - Testing timeframe: 1h
+2025-12-15 15:12:41,279 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 12: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,279 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,279 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,279 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - INFO - Testing timeframe: 1d
+2025-12-15 15:12:41,279 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,279 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,279 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,279 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,280 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,280 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,280 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,280 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,280 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 24: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,280 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,280 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 27: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,280 - analysis.autonomous_backtester - INFO - Testing timeframe: 5m
+2025-12-15 15:12:41,280 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,280 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,280 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,280 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,281 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,281 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,281 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,281 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,281 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,281 - analysis.autonomous_backtester - INFO - Testing timeframe: 30m
+2025-12-15 15:12:41,281 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,281 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 25: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,281 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,281 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 31: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 37: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 43: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 49: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - INFO - Testing timeframe: 1m
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,282 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,282 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,282 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 200: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 225: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 250: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 275: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 300: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 325: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,283 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,283 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,283 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 350: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,284 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,284 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 375: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,284 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,284 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 400: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,284 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,284 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 425: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,284 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,284 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 450: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,284 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,284 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 475: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,284 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,284 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,284 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 500: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,285 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 525: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,285 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 550: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,285 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 575: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,285 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 600: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,285 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 625: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,285 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 650: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,285 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,285 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 675: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 700: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 725: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 750: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 775: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 800: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 825: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,286 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,286 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,286 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 850: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,287 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,287 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 875: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,287 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,287 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 900: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,287 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,287 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 925: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,287 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,287 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 950: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,287 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,287 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,287 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 975: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,287 - analysis.autonomous_backtester - INFO - Testing timeframe: 15m
+2025-12-15 15:12:41,288 - analysis.autonomous_backtester - INFO - Backtest completed. Results saved to backtest_results/backtest_20251215_141241.json
+2025-12-15 15:12:41,288 - __main__ - INFO - Backtesting completed. Performance metrics: {}
+2025-12-15 15:12:41,288 - __main__ - INFO - Phase 2: Running continuous improvement loop
+2025-12-15 15:12:41,288 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:12:41,288 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:12:41,288 - analysis.autonomous_backtester - INFO - AutonomousBacktester initialized
+2025-12-15 15:12:41,289 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:12:41,289 - analysis.ml_wave_ranker - INFO - MLWaveRanker initialized
+2025-12-15 15:12:41,289 - analysis.ml_training_evaluator - INFO - MLTrainingEvaluator initialized
+2025-12-15 15:12:41,289 - analysis.continuous_improvement_loop - INFO - ContinuousImprovementLoop initialized
+2025-12-15 15:12:41,289 - analysis.continuous_improvement_loop - INFO - Starting continuous improvement loop for 2 cycles
+2025-12-15 15:12:41,289 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle 1/2
+2025-12-15 15:12:41,289 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle cycle_20251215_151241
+2025-12-15 15:12:41,289 - analysis.continuous_improvement_loop - INFO - Phase 1: Running backtests
+2025-12-15 15:12:41,291 - analysis.autonomous_backtester - INFO - Loaded 24 records for timeframe 1h
+2025-12-15 15:12:41,292 - analysis.autonomous_backtester - INFO - Loaded 30 records for timeframe 1d
+2025-12-15 15:12:41,294 - analysis.autonomous_backtester - INFO - Loaded 200 records for timeframe 5m
+2025-12-15 15:12:41,296 - analysis.autonomous_backtester - INFO - Loaded 50 records for timeframe 30m
+2025-12-15 15:12:41,299 - analysis.autonomous_backtester - INFO - Loaded 1000 records for timeframe 1m
+2025-12-15 15:12:41,300 - analysis.autonomous_backtester - INFO - Loaded 100 records for timeframe 15m
+2025-12-15 15:12:41,300 - analysis.autonomous_backtester - INFO - Starting backtest
+2025-12-15 15:12:41,300 - analysis.autonomous_backtester - INFO - Testing timeframe: 1h
+2025-12-15 15:12:41,300 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,300 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 12: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,301 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,301 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,301 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - INFO - Testing timeframe: 1d
+2025-12-15 15:12:41,301 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,301 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,301 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,301 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,301 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,302 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,302 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 24: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,302 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,302 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 27: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,302 - analysis.autonomous_backtester - INFO - Testing timeframe: 5m
+2025-12-15 15:12:41,302 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,302 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,302 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,302 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,302 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,302 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,302 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,302 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - INFO - Testing timeframe: 30m
+2025-12-15 15:12:41,303 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 25: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,303 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 31: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,303 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 37: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,303 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 43: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,303 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 49: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,303 - analysis.autonomous_backtester - INFO - Testing timeframe: 1m
+2025-12-15 15:12:41,303 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,303 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,304 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,304 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,304 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,304 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,304 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,304 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,304 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,304 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,304 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 200: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 225: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 250: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 275: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 300: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 325: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,305 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 350: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,305 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,305 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 375: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 400: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 425: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 450: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 475: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 500: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,306 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 525: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,306 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,306 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 550: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,307 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 575: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,307 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 600: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,307 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 625: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,307 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 650: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,307 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 675: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,307 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,307 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,307 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 700: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 725: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 750: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 775: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 800: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 825: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 850: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,308 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,308 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,308 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 875: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,309 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,309 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 900: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,309 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,309 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 925: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,309 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,309 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 950: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,309 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,309 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,309 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 975: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,309 - analysis.autonomous_backtester - INFO - Testing timeframe: 15m
+2025-12-15 15:12:41,309 - analysis.autonomous_backtester - INFO - Backtest completed. Results saved to backtest_results/backtest_20251215_141241.json
+2025-12-15 15:12:41,309 - analysis.continuous_improvement_loop - INFO - Phase 2: Analyzing performance
+2025-12-15 15:12:41,310 - analysis.continuous_improvement_loop - INFO - Phase 3: Identifying improvement areas
+2025-12-15 15:12:41,310 - analysis.continuous_improvement_loop - INFO - Phase 4: Retraining ML models
+2025-12-15 15:12:41,310 - analysis.ml_training_evaluator - INFO - Starting complete training cycle
+2025-12-15 15:12:41,310 - analysis.ml_training_evaluator - INFO - Preparing training data
+2025-12-15 15:12:41,310 - analysis.ml_training_evaluator - WARNING - No training data available
+2025-12-15 15:12:41,310 - analysis.continuous_improvement_loop - INFO - Phase 5: Applying system updates
+2025-12-15 15:12:41,310 - analysis.continuous_improvement_loop - INFO - Phase 6: Validating improvements
+2025-12-15 15:12:41,310 - analysis.continuous_improvement_loop - INFO - Improvement cycle cycle_20251215_151241 completed successfully in 0.02 seconds
+2025-12-15 15:12:41,311 - analysis.continuous_improvement_loop - INFO - Improvement cycle logged to improvement_logs/improvement_cycle_cycle_20251215_151241.json
+2025-12-15 15:12:41,311 - analysis.continuous_improvement_loop - INFO - Cycle 1 results: Success=True
+2025-12-15 15:12:41,311 - analysis.continuous_improvement_loop - INFO - Waiting 1 hours before next cycle
+2025-12-15 15:12:41,311 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle 2/2
+2025-12-15 15:12:41,311 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle cycle_20251215_151241
+2025-12-15 15:12:41,311 - analysis.continuous_improvement_loop - INFO - Phase 1: Running backtests
+2025-12-15 15:12:41,312 - analysis.autonomous_backtester - INFO - Loaded 24 records for timeframe 1h
+2025-12-15 15:12:41,313 - analysis.autonomous_backtester - INFO - Loaded 30 records for timeframe 1d
+2025-12-15 15:12:41,314 - analysis.autonomous_backtester - INFO - Loaded 200 records for timeframe 5m
+2025-12-15 15:12:41,316 - analysis.autonomous_backtester - INFO - Loaded 50 records for timeframe 30m
+2025-12-15 15:12:41,318 - analysis.autonomous_backtester - INFO - Loaded 1000 records for timeframe 1m
+2025-12-15 15:12:41,319 - analysis.autonomous_backtester - INFO - Loaded 100 records for timeframe 15m
+2025-12-15 15:12:41,319 - analysis.autonomous_backtester - INFO - Starting backtest
+2025-12-15 15:12:41,319 - analysis.autonomous_backtester - INFO - Testing timeframe: 1h
+2025-12-15 15:12:41,319 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,319 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,319 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,319 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 12: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,319 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,319 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,319 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,319 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,319 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,319 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,319 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,319 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,319 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - INFO - Testing timeframe: 1d
+2025-12-15 15:12:41,320 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,320 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,320 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,320 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 24: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,320 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 27: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - INFO - Testing timeframe: 5m
+2025-12-15 15:12:41,320 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,320 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,320 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - INFO - Testing timeframe: 30m
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 25: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 31: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,321 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,321 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 37: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,321 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 43: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 49: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - INFO - Testing timeframe: 1m
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,322 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 200: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,322 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,322 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 225: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 250: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 275: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 300: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 325: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 350: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 375: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,323 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,323 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 400: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,323 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,324 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 425: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,324 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,324 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 450: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,324 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,324 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 475: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,324 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,324 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 500: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,324 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,324 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 525: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,324 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,324 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,324 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 550: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,325 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,325 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 575: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,325 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,325 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 600: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,325 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,325 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 625: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,325 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,325 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,325 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 650: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,326 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,326 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 675: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,326 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,326 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 700: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,326 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,326 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 725: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,326 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,326 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,326 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 750: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,327 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,327 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 775: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,327 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,327 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 800: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,327 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,327 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 825: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,327 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,327 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,327 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 850: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,328 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,328 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 875: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,328 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,328 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 900: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,328 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,328 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 925: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,328 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,328 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,328 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 950: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,328 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:12:41,329 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:12:41,329 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:12:41,329 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 975: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:12:41,329 - analysis.autonomous_backtester - INFO - Testing timeframe: 15m
+2025-12-15 15:12:41,329 - analysis.autonomous_backtester - INFO - Backtest completed. Results saved to backtest_results/backtest_20251215_141241.json
+2025-12-15 15:12:41,329 - analysis.continuous_improvement_loop - INFO - Phase 2: Analyzing performance
+2025-12-15 15:12:41,330 - analysis.continuous_improvement_loop - INFO - Phase 3: Identifying improvement areas
+2025-12-15 15:12:41,330 - analysis.continuous_improvement_loop - INFO - Phase 4: Retraining ML models
+2025-12-15 15:12:41,330 - analysis.ml_training_evaluator - INFO - Starting complete training cycle
+2025-12-15 15:12:41,330 - analysis.ml_training_evaluator - INFO - Preparing training data
+2025-12-15 15:12:41,330 - analysis.ml_training_evaluator - WARNING - No training data available
+2025-12-15 15:12:41,330 - analysis.continuous_improvement_loop - INFO - Phase 5: Applying system updates
+2025-12-15 15:12:41,331 - analysis.continuous_improvement_loop - INFO - Phase 6: Validating improvements
+2025-12-15 15:12:41,331 - analysis.continuous_improvement_loop - INFO - Improvement cycle cycle_20251215_151241 completed successfully in 0.02 seconds
+2025-12-15 15:12:41,331 - analysis.continuous_improvement_loop - INFO - Improvement cycle logged to improvement_logs/improvement_cycle_cycle_20251215_151241.json
+2025-12-15 15:12:41,331 - analysis.continuous_improvement_loop - INFO - Cycle 2 results: Success=True
+2025-12-15 15:12:41,331 - analysis.continuous_improvement_loop - INFO - Continuous improvement loop completed
+2025-12-15 15:12:41,331 - __main__ - INFO - Phase 3: Generating system report
+2025-12-15 15:12:41,331 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:12:41,331 - analysis.system_reporter - INFO - SystemReporter initialized
+2025-12-15 15:12:41,332 - analysis.system_reporter - INFO - Generating comprehensive report: system_report_20251215_151241
+2025-12-15 15:12:41,332 - analysis.system_reporter - INFO - Collecting report data
+2025-12-15 15:12:41,332 - analysis.system_reporter - INFO - Report saved to reports/system_report_20251215_151241.txt
+2025-12-15 15:12:41,332 - analysis.system_reporter - INFO - No recent trades available for plotting
+2025-12-15 15:12:41,332 - __main__ - INFO - Comprehensive report generated: reports/system_report_20251215_151241.txt
+2025-12-15 15:12:41,332 - analysis.system_reporter - INFO - Generating real-time dashboard data
+2025-12-15 15:12:41,333 - __main__ - INFO - Dashboard data: {
+  "timestamp": "2025-12-15T14:12:41.332792+00:00",
+  "system_status": "operational",
+  "metrics": {
+    "active_hypotheses": 0,
+    "total_trades": 0,
+    "closed_trades": 0,
+    "market_data_points": 0
+  }
+}
+2025-12-15 15:12:41,333 - __main__ - INFO - Autonomous testing and improvement process completed successfully
+2025-12-15 15:13:38,786 - __main__ - INFO - Starting autonomous Elliott Wave trading system testing and improvement
+2025-12-15 15:13:38,786 - __main__ - INFO - Phase 1: Running backtesting
+2025-12-15 15:13:38,786 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:13:38,786 - analysis.autonomous_backtester - INFO - AutonomousBacktester initialized
+2025-12-15 15:13:38,789 - analysis.autonomous_backtester - INFO - Loaded 24 records for timeframe 1h
+2025-12-15 15:13:38,791 - analysis.autonomous_backtester - INFO - Loaded 30 records for timeframe 1d
+2025-12-15 15:13:38,792 - analysis.autonomous_backtester - INFO - Loaded 200 records for timeframe 5m
+2025-12-15 15:13:38,793 - analysis.autonomous_backtester - INFO - Loaded 50 records for timeframe 30m
+2025-12-15 15:13:38,795 - analysis.autonomous_backtester - INFO - Loaded 1000 records for timeframe 1m
+2025-12-15 15:13:38,796 - analysis.autonomous_backtester - INFO - Loaded 100 records for timeframe 15m
+2025-12-15 15:13:38,796 - analysis.autonomous_backtester - INFO - Starting backtest
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - INFO - Testing timeframe: 1h
+2025-12-15 15:13:38,797 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 12: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,797 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,797 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,797 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - INFO - Testing timeframe: 1d
+2025-12-15 15:13:38,797 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,797 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,797 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 24: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 27: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - INFO - Testing timeframe: 5m
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,798 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,798 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,798 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - INFO - Testing timeframe: 30m
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 25: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 31: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 37: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 43: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 49: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,799 - analysis.autonomous_backtester - INFO - Testing timeframe: 1m
+2025-12-15 15:13:38,799 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,799 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 200: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 225: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,800 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,800 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 250: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,800 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 275: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 300: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 325: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 350: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 375: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 400: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 425: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,801 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,801 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,801 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 450: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 475: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 500: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 525: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 550: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 575: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 600: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,802 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 625: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,802 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,802 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 650: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 675: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 700: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 725: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 750: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 775: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 800: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,803 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,803 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,803 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 825: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 850: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 875: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 900: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 925: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 950: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,804 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 975: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - INFO - Testing timeframe: 15m
+2025-12-15 15:13:38,804 - analysis.autonomous_backtester - INFO - Backtest completed. Results saved to backtest_results/backtest_20251215_141338.json
+2025-12-15 15:13:38,804 - __main__ - INFO - Backtesting completed. Performance metrics: {}
+2025-12-15 15:13:38,805 - __main__ - INFO - Phase 2: Running continuous improvement loop
+2025-12-15 15:13:38,805 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:13:38,805 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:13:38,805 - analysis.autonomous_backtester - INFO - AutonomousBacktester initialized
+2025-12-15 15:13:38,805 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:13:38,805 - analysis.ml_wave_ranker - INFO - MLWaveRanker initialized
+2025-12-15 15:13:38,806 - analysis.ml_training_evaluator - INFO - MLTrainingEvaluator initialized
+2025-12-15 15:13:38,806 - analysis.continuous_improvement_loop - INFO - ContinuousImprovementLoop initialized
+2025-12-15 15:13:38,806 - analysis.continuous_improvement_loop - INFO - Starting continuous improvement loop for 2 cycles
+2025-12-15 15:13:38,806 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle 1/2
+2025-12-15 15:13:38,806 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle cycle_20251215_151338
+2025-12-15 15:13:38,806 - analysis.continuous_improvement_loop - INFO - Phase 1: Running backtests
+2025-12-15 15:13:38,807 - analysis.autonomous_backtester - INFO - Loaded 24 records for timeframe 1h
+2025-12-15 15:13:38,808 - analysis.autonomous_backtester - INFO - Loaded 30 records for timeframe 1d
+2025-12-15 15:13:38,810 - analysis.autonomous_backtester - INFO - Loaded 200 records for timeframe 5m
+2025-12-15 15:13:38,811 - analysis.autonomous_backtester - INFO - Loaded 50 records for timeframe 30m
+2025-12-15 15:13:38,812 - analysis.autonomous_backtester - INFO - Loaded 1000 records for timeframe 1m
+2025-12-15 15:13:38,815 - analysis.autonomous_backtester - INFO - Loaded 100 records for timeframe 15m
+2025-12-15 15:13:38,815 - analysis.autonomous_backtester - INFO - Starting backtest
+2025-12-15 15:13:38,816 - analysis.autonomous_backtester - INFO - Testing timeframe: 1h
+2025-12-15 15:13:38,816 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,816 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 12: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,816 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,816 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,816 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,816 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,816 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,816 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,816 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,816 - analysis.autonomous_backtester - INFO - Testing timeframe: 1d
+2025-12-15 15:13:38,817 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,817 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,817 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,817 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,817 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,817 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,817 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,817 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,817 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,817 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,817 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,817 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 24: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 27: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - INFO - Testing timeframe: 5m
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,818 - analysis.autonomous_backtester - INFO - Testing timeframe: 30m
+2025-12-15 15:13:38,818 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,818 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 25: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 31: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 37: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 43: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 49: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - INFO - Testing timeframe: 1m
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,819 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,819 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,819 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 200: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 225: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 250: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 275: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 300: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,820 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 325: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,820 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,820 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 350: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 375: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 400: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 425: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 450: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 475: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,821 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,821 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 500: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,821 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 525: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 550: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 575: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 600: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 625: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 650: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 675: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,822 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,822 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,822 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 700: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 725: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 750: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 775: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 800: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 825: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 850: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,823 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,823 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 875: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,823 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,824 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 900: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,824 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,824 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 925: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,824 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,824 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 950: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,824 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,824 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,824 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 975: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,824 - analysis.autonomous_backtester - INFO - Testing timeframe: 15m
+2025-12-15 15:13:38,824 - analysis.autonomous_backtester - INFO - Backtest completed. Results saved to backtest_results/backtest_20251215_141338.json
+2025-12-15 15:13:38,824 - analysis.continuous_improvement_loop - INFO - Phase 2: Analyzing performance
+2025-12-15 15:13:38,825 - analysis.continuous_improvement_loop - INFO - Phase 3: Identifying improvement areas
+2025-12-15 15:13:38,825 - analysis.continuous_improvement_loop - INFO - Phase 4: Retraining ML models
+2025-12-15 15:13:38,825 - analysis.ml_training_evaluator - INFO - Starting complete training cycle
+2025-12-15 15:13:38,825 - analysis.ml_training_evaluator - INFO - Preparing training data
+2025-12-15 15:13:38,825 - analysis.ml_training_evaluator - WARNING - No training data available
+2025-12-15 15:13:38,825 - analysis.continuous_improvement_loop - INFO - Phase 5: Applying system updates
+2025-12-15 15:13:38,825 - analysis.continuous_improvement_loop - INFO - Phase 6: Validating improvements
+2025-12-15 15:13:38,825 - analysis.continuous_improvement_loop - INFO - Improvement cycle cycle_20251215_151338 completed successfully in 0.02 seconds
+2025-12-15 15:13:38,826 - analysis.continuous_improvement_loop - INFO - Improvement cycle logged to improvement_logs/improvement_cycle_cycle_20251215_151338.json
+2025-12-15 15:13:38,826 - analysis.continuous_improvement_loop - INFO - Cycle 1 results: Success=True
+2025-12-15 15:13:38,826 - analysis.continuous_improvement_loop - INFO - Waiting 1 hours before next cycle
+2025-12-15 15:13:38,826 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle 2/2
+2025-12-15 15:13:38,826 - analysis.continuous_improvement_loop - INFO - Starting improvement cycle cycle_20251215_151338
+2025-12-15 15:13:38,826 - analysis.continuous_improvement_loop - INFO - Phase 1: Running backtests
+2025-12-15 15:13:38,827 - analysis.autonomous_backtester - INFO - Loaded 24 records for timeframe 1h
+2025-12-15 15:13:38,828 - analysis.autonomous_backtester - INFO - Loaded 30 records for timeframe 1d
+2025-12-15 15:13:38,829 - analysis.autonomous_backtester - INFO - Loaded 200 records for timeframe 5m
+2025-12-15 15:13:38,831 - analysis.autonomous_backtester - INFO - Loaded 50 records for timeframe 30m
+2025-12-15 15:13:38,833 - analysis.autonomous_backtester - INFO - Loaded 1000 records for timeframe 1m
+2025-12-15 15:13:38,834 - analysis.autonomous_backtester - INFO - Loaded 100 records for timeframe 15m
+2025-12-15 15:13:38,834 - analysis.autonomous_backtester - INFO - Starting backtest
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - INFO - Testing timeframe: 1h
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 12: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - INFO - Testing timeframe: 1d
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 15: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,835 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 18: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,835 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,835 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 21: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 24: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 27: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - INFO - Testing timeframe: 5m
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,836 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,836 - analysis.autonomous_backtester - INFO - Testing timeframe: 30m
+2025-12-15 15:13:38,836 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,837 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 25: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,837 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,837 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 31: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,837 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,837 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 37: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,837 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,837 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,838 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 43: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,838 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,838 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 49: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,838 - analysis.autonomous_backtester - INFO - Testing timeframe: 1m
+2025-12-15 15:13:38,838 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,838 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 100: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,838 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,838 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 125: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,838 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,838 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,839 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 150: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,839 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,839 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 175: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,839 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,839 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 200: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,839 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,839 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,839 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 225: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,839 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,840 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 250: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,840 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,840 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 275: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,840 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,840 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 300: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,840 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,840 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 325: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,840 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,840 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 350: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,840 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,840 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,840 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 375: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 400: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 425: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 450: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 475: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 500: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 525: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,841 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,841 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,841 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 550: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 575: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 600: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 625: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 650: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 675: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 700: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,842 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,842 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 725: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,842 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 750: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 775: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 800: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 825: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 850: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 875: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,843 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,843 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 900: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,843 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,844 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,844 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,844 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 925: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,844 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,844 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,844 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,844 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 950: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,844 - analysis.minimal_wave_detector - INFO - MinimalElliottRuleEngine initialized
+2025-12-15 15:13:38,844 - analysis.enhanced_rule_engine - INFO - EnhancedElliottRuleEngine initialized
+2025-12-15 15:13:38,844 - analysis.nms - INFO - Initialized NMS with IoU threshold: 0.5, confidence weight: 0.7
+2025-12-15 15:13:38,844 - analysis.autonomous_backtester - ERROR - Error analyzing window at index 975: unsupported operand type(s) for +: 'int' and 'str'
+2025-12-15 15:13:38,844 - analysis.autonomous_backtester - INFO - Testing timeframe: 15m
+2025-12-15 15:13:38,844 - analysis.autonomous_backtester - INFO - Backtest completed. Results saved to backtest_results/backtest_20251215_141338.json
+2025-12-15 15:13:38,844 - analysis.continuous_improvement_loop - INFO - Phase 2: Analyzing performance
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Phase 3: Identifying improvement areas
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Phase 4: Retraining ML models
+2025-12-15 15:13:38,845 - analysis.ml_training_evaluator - INFO - Starting complete training cycle
+2025-12-15 15:13:38,845 - analysis.ml_training_evaluator - INFO - Preparing training data
+2025-12-15 15:13:38,845 - analysis.ml_training_evaluator - WARNING - No training data available
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Phase 5: Applying system updates
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Phase 6: Validating improvements
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Improvement cycle cycle_20251215_151338 completed successfully in 0.02 seconds
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Improvement cycle logged to improvement_logs/improvement_cycle_cycle_20251215_151338.json
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Cycle 2 results: Success=True
+2025-12-15 15:13:38,845 - analysis.continuous_improvement_loop - INFO - Continuous improvement loop completed
+2025-12-15 15:13:38,846 - __main__ - INFO - Phase 3: Generating system report
+2025-12-15 15:13:38,846 - analysis.data_storage - INFO - DataStorage initialized with database at ./data/elliott_wave_data.db
+2025-12-15 15:13:38,846 - analysis.system_reporter - INFO - SystemReporter initialized
+2025-12-15 15:13:38,846 - analysis.system_reporter - INFO - Generating comprehensive report: system_report_20251215_151338
+2025-12-15 15:13:38,846 - analysis.system_reporter - INFO - Collecting report data
+2025-12-15 15:13:38,847 - analysis.system_reporter - INFO - Report saved to reports/system_report_20251215_151338.txt
+2025-12-15 15:13:38,847 - analysis.system_reporter - INFO - No recent trades available for plotting
+2025-12-15 15:13:38,847 - __main__ - INFO - Comprehensive report generated: reports/system_report_20251215_151338.txt
+2025-12-15 15:13:38,847 - analysis.system_reporter - INFO - Generating real-time dashboard data
+2025-12-15 15:13:38,847 - __main__ - INFO - Dashboard data: {
+  "timestamp": "2025-12-15T14:13:38.847217+00:00",
+  "system_status": "operational",
+  "metrics": {
+    "active_hypotheses": 0,
+    "total_trades": 0,
+    "closed_trades": 0,
+    "market_data_points": 0
+  }
+}
+2025-12-15 15:13:38,847 - __main__ - INFO - Autonomous testing and improvement process completed successfully
